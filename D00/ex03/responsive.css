@@ -1,0 +1,58 @@
+#logo{
+  width : 5%;
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  text-align: center;
+  font-size: 1vw;
+}
+td p{
+  font-size: 1vw;
+}
+table{
+  width:100%;
+  height:100%;
+}
+td{
+  border:1px solid black;
+}
+.blue_1{
+  background-color: #2444C4;
+}
+.no_border{
+  border:none;
+}
+.violet{
+  background-color: #BE38D2;
+}
+.red{
+  background-color: #E51134;
+}
+.orange{
+  background-color: #F5900C;
+}
+.green{
+  background-color: #4DA433;
+}
+.blue_2{
+  background-color: #2DCFE8;
+}
+.pink{
+  background-color: #E7AEFF;
+}
+.yellow{
+  background-color: #FFFF3D;
+}
+.fushia{
+  background-color: #F700FF;
+}
+.num{
+  text-align: left;
+  margin-bottom: 0px;
+}
+.mass{
+  margin-top: 0px;
+  text-align: right;
+}

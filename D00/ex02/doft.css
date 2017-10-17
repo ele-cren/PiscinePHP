@@ -1,0 +1,139 @@
+body{
+  background-color: #505050;
+}
+#bloc_page{
+  width:1366px;
+  margin: auto;
+}
+#header_banner{
+  margin-top: 20px;
+  position: relative;
+  background-color: #909090;
+  width:auto;
+  height:152px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px black;
+}
+#mainpic{
+  position:absolute;
+  width:500px;
+  top:10px;
+}
+#loupe{
+  position:absolute;
+  right:0px;
+  right:50px;
+  bottom: -20px;
+}
+#reload{
+  position: absolute;
+  right:10px;
+  top:10px;
+  width: 25px;
+}
+#close{
+  position: absolute;
+  bottom:10px;
+  right:13px;
+}
+section{
+  display: flex;
+  flex-direction: column;
+}
+#main_bloc article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #909090;
+  height:580px;
+  width:1000px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px black;
+}
+aside{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #909090;
+  height:500px;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px black;
+}
+nav{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #909090;
+  width: 150px;
+  height:500px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px black;
+}
+#cluster{
+  align-self: center;
+  max-width: 990px;
+}
+#brick{
+  width: 125px;
+  height: 80px;
+  background: url('resources/brick.jpg');
+}
+#main_bloc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#green_box{
+  position: relative;
+  width:550px;
+  height:200px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px black;
+  background-color: #8cfd8e;
+  position: relative;
+  bottom:50px;
+  right:50px;
+}
+#text_input{
+  position: absolute;
+  top:114px;
+  width:400px;
+  left: 15px;
+  height:18px;
+}
+#submit{
+  border: none;
+  font-size: 13px;
+  background-color: #f8f8f6;
+  background: -webkit-linear-gradient(#f8f8f6, #d5d4d5);
+  position: absolute;
+  border : 1px solid #b8b0b8;
+  top: 115px;
+  right: 50px;
+}
+#look{
+  border: 5px solid red;
+  border-radius: 10px;
+}
+p{
+  font-size: 20px;
+  margin-left: 10px;
+}
+strong{
+  font-size: 35px;
+  font-weight: normal;
+}
+p + p{
+  margin-top: -20px;
+  font-style: italic;
+}
+em{
+  text-shadow: 6px 6px 5px rgba(255, 77, 49, 1);
+}

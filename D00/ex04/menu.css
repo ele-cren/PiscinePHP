@@ -1,0 +1,79 @@
+#main_menu, #main_menu ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+#main_menu li{
+display:inline-block;
+position:relative;
+}
+#main_menu ul li{
+display:inherit;
+}
+#main_menu ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+}
+#main_menu li:hover ul{
+max-height:15em;
+}
+#main_menu li:first-child{
+background-color: #54438A;
+}
+#main_menu li:nth-child(2){
+background-color: #0763A1;
+}
+#main_menu li:nth-child(3){
+background-color: #953700;
+}
+#main_menu li:last-child{
+background-color: #51A847;
+}
+#main_menu li:nth-child(2) li{
+background:#04253A;
+}
+#main_menu li:nth-child(3) li{
+background:#521E00;
+}
+#main_menu li:last-child li{
+background:#264B22;
+}
+#main_menu li:first-child:hover, #main_menu li:first-child li:hover{
+background:#6D54C0
+}
+#main_menu li:nth-child(2):hover, #main_menu li:nth-child(2) li:hover{
+background:#0396F9;
+}
+#main_menu li:nth-child(3):hover, #main_menu li:nth-child(3) li:hover{
+background:#FF5E00;
+}
+#main_menu li:last-child:hover, #main_menu li:last-child li:hover{
+background:#73F265;
+}
+#main_menu a{
+font-size: 2vw;
+text-decoration:none;
+display:block;
+padding:15px 30px;
+color:white;
+font-family:arial;
+}
+#main_menu ul a{
+font-size: 1.5vw;
+padding:8px 0;
+}
+#main_menu li:hover li a{
+color:white;
+text-transform:inherit;
+}
+#main_menu li:hover a, #main_menu li li:hover a{
+color:black;
+}

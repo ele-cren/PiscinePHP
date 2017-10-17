@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            var colors = ["red", "green", "blue"];
+            var i = 0;
+                function IncDiv(id){
+                    var div = document.getElementById(id);
+                    var new_width = parseInt(div.style.width) + 10;
+                    var new_height = parseInt(div.style.height) + 10;
+                    if (new_height < 420){
+                        div.style.height = new_height + 'px';
+                        div.style.width = new_width + 'px';
+                    }
+                    else{
+                        div.style.height = 200+ 'px';
+                        div.style.width = 200 + 'px';
+                    }
+                    i = (i + 1) % colors.length;
+                    div.style.backgroundColor = colors[i];
+                }
+                function DecDiv(id){
+                    var div = document.getElementById(id);
+                    var new_width = parseInt(div.style.width) - 5;
+                    var new_height = parseInt(div.style.height) - 5;
+                    if (new_height > 200){
+                        div.style.height = new_height + 'px';
+                        div.style.width = new_width + 'px';
+                    }
+                    else{
+                        div.style.height = 200+ 'px';
+                        div.style.width = 200 + 'px';
+                    }
+                    i = i - 1;
+                    if (i < 0)
+                        i = 2;
+                    div.style.backgroundColor = colors[i];
+                }
+        </script>
+    </head>
+    <body>
+        <div id="balloon" style="margin-left: 450px;
+                                margin-top: 450px;
+                                border-radius: 50%;
+                                width: 200px;
+                                height: 200px;
+                                background-color: red;" 
+                        onclick="IncDiv('balloon');" onmouseout="DecDiv('balloon')">
+        </div>
+    </body>
+</html>

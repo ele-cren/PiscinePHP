@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calc</title>
+
+    <script type="text/javascript">
+      function Calculate(id1, id2, id3){
+        var left = parseInt(document.getElementById(id1).value);
+        var op = document.getElementById(id2).value;
+        var res;
+        var right = parseInt(document.getElementById(id3).value);
+        if (right != NaN && left != NaN && left >= 0 && right >= 0){
+          if (op == '+')
+            res = left + right;
+          else if (op == '-')
+            res = left - right;
+          else if (op == '*')
+            res = left * right;
+          else if (op == '/'){
+            if (right == 0){
+              res = -1;
+              console.log("It’s over 9000!");
+              alert('It’s over 9000!');
+            }
+            else
+              res = left / right;
+          }
+          else if (op == '%'){
+            if (right == 0){
+              res = -1;
+              console.log("It’s over 9000!");
+              alert('It’s over 9000!');
+            }
+            else
+              res = left % right;
+          }
+          if (res >= 0){
+            alert(res);
+            console.log(res);
+          }
+        }
+        else{
+          alert('Error :(');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input id="left" type="text" name="left"/>
+    <select id="select">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+    </select>
+    <input id="right" type="text" name="right"/>
+    <input type="submit" name="submit" value="Try me!" onclick="Calculate('left', 'select', 'right');"/>
+    <script>
+        setInterval("alert('Please, use me...')", 30000); 
+    </script>
+  </body>
+</html>
